@@ -17,8 +17,9 @@ If you want to suceed, start doing it now!!
 
 function createTemplate(data){
     var title = data.title;
-    var date
-}
+    var date = data.date;
+    var cotent= data.content;
+
 
 var htmltemplate =`<html>
 
@@ -28,9 +29,6 @@ var htmltemplate =`<html>
 ${title}
 </title>
  <meta name="viewport" content="width=device-width, initial-scale=1" />
- <style>
- }
- </style>
  </head>
  <body>
      <div class="container">
@@ -47,7 +45,8 @@ ${content}
 </div>
 </body>
 </html>`;
-
+return htmltemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -63,15 +62,19 @@ app.get('/ui/images.jpg', function (req, res) {
 
 
 app.get('/big1', function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'big1.html'));
+    res.send(createTemplate(big1));
+    
+    // res.sendFile(path.join(__dirname, 'ui', 'big1.html'));
 });
 
 app.get('/big2', function (req, res) {
- res.sendFile(path.join(__dirname, 'ui', 'big2.html'));
+    res.send(createTemplate(big2));
+//  res.sendFile(path.join(__dirname, 'ui', 'big2.html'));
 });
 
 app.get('/big3', function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'big3.html'));
+    //  res.sendFile(path.join(__dirname, 'ui', 'big3.html'));
+    res.send(createTemplate(big3));
  
 });
 
