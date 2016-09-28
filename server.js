@@ -18,7 +18,7 @@ If you want to suceed, start doing it now!!
 function createTemplate(data){
     var title = data.title;
     var date = data.date;
-    var cotent= data.content;
+    var content= data.Content;
 
 
 var htmltemplate =`<html>
