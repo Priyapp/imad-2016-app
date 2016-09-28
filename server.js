@@ -5,7 +5,31 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var articles={
+    big1={ 
+    title :'Thing Big | Pp',
+    date :'Sep 28, 2016',
+    Content:`<p>
+            If you want to suceed, start doing it now!!
+            </p>`
+            },
+    big2={
+    title :'Thing Big | Pp',
+    date :'Sep 28, 2016',
+    Content:`<p>
+if u do same thing always, u will always be the same person as u today, 
+if u want to achieve something, start doing different things right now.
+</p>` },
+    big3 =
+    {
+    title :'Thing Big | Pp',
+    date :'Sep 28, 2016',
+    Content:`<p>
+Do what u love, love what u do...
+</p>`
+    }
+    
+};
 var big1 ={
     title :'Thing Big | Pp',
     date :'Sep 28, 2016',
@@ -14,6 +38,22 @@ If you want to suceed, start doing it now!!
 </p>`
 };
 
+var big2 ={
+    title :'Thing Big | Pp',
+    date :'Sep 28, 2016',
+    Content:`<p>
+if u do same thing always, u will always be the same person as u today, 
+if u want to achieve something, start doing different things right now.
+</p>`
+};
+
+var big3 ={
+    title :'Thing Big | Pp',
+    date :'Sep 28, 2016',
+    Content:`<p>
+Do what u love, love what u do...
+</p>`
+};
 
 function createTemplate(data){
     var title = data.title;
