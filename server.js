@@ -24,11 +24,11 @@ app.get('/big1', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'big1.html'));
 });
 
-app.get('/big2.html', function (req, res) {
+app.get('/big2', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'big2.html'));
 });
 
-app.get('/big3.html', function (req, res) {
+app.get('/big3', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'big3.html'));
  
 });
