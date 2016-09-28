@@ -6,21 +6,23 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    big1={ 
+    big1:{ 
     title :'Thing Big | Pp',
     date :'Sep 28, 2016',
     Content:`<p>
             If you want to suceed, start doing it now!!
             </p>`
             },
-    big2={
+    big2 :{
     title :'Thing Big | Pp',
     date :'Sep 28, 2016',
     Content:`<p>
 if u do same thing always, u will always be the same person as u today, 
 if u want to achieve something, start doing different things right now.
-</p>` },
-    big3 =
+</p>` 
+        },
+        
+    big3 :
     {
     title :'Thing Big | Pp',
     date :'Sep 28, 2016',
@@ -101,10 +103,16 @@ app.get('/ui/images.jpg', function (req, res) {
 });
 
 
-app.get('/big1', function (req, res) {
-    res.send(createTemplate(big1));
+// app.get('/big1', function (req, res) {
+//     res.send(createTemplate(big1));
     
-    // res.sendFile(path.join(__dirname, 'ui', 'big1.html'));
+//     // res.sendFile(path.join(__dirname, 'ui', 'big1.html'));
+// });
+
+app.get('/:articlesName', function(req,res){
+  
+  var articlesName=req.params.articlesName;
+  res.send(createTemplate(articles[articlesName]));
 });
 
 app.get('/big2', function (req, res) {
