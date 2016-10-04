@@ -115,16 +115,16 @@ app.get('/:articlesName', function(req,res){
   res.send(createTemplate(articles[articlesName]));
 });
 
-app.get('/big2', function (req, res) {
-    res.send(createTemplate(big2));
-//  res.sendFile(path.join(__dirname, 'ui', 'big2.html'));
-});
+// app.get('/big2', function (req, res) {
+//     res.send(createTemplate(big2));
+// //  res.sendFile(path.join(__dirname, 'ui', 'big2.html'));
+// });
 
-app.get('/big3', function (req, res) {
-    //  res.sendFile(path.join(__dirname, 'ui', 'big3.html'));
-    res.send(createTemplate(big3));
+// app.get('/big3', function (req, res) {
+//     //  res.sendFile(path.join(__dirname, 'ui', 'big3.html'));
+//     res.send(createTemplate(big3));
  
-});
+// });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
