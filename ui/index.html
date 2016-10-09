@@ -8,7 +8,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <div id="img" class="center">
+        <div id="img" class="center" onclick= "moveImgFunction()">
             <img src="/ui/images.jpg" class="img-medium"/>
         </div>
         <br>
@@ -20,5 +20,18 @@
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
-    </body>
+    
+
+<script>
+function moveImgFunction(){
+    var intval=setInterval(moveRight,300);
+    
+}
+
+function moveRight(){
+    document.getElementById("img").style.moveRight=100;
+
+}
+</script>
+</body>
 </html>
