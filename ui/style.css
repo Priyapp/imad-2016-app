@@ -37,3 +37,8 @@ body {
 .date{
     color:red;
 }
+
+
+.img-circle {
+    border-radius: 50%;
+}
