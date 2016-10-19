@@ -109,6 +109,10 @@ app.get('/ui/backg1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'backg1.jpg'));
 });
 
+app.get('/ui/top-animate.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'top-animate.png'));
+});
+
 
 // app.get('/big1', function (req, res) {
 //     res.send(createTemplate(big1));
