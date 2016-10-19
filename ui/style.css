@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
     margin-top: 75px;
-     background-image: url("backg1.jpg");
+     /*background-image: url("backg1.jpg");*/
+    background: #F8F8F8 url('bg-pattern.gif');
      min-height: 100%;
     background-position: center;
     background-size: cover;
