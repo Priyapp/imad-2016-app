@@ -101,8 +101,8 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/page1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
 });
-app.get('/ui/IMG_20141005_181935.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'IMG_20141005_181935.jpg'));
+app.get('/ui/P.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'P.jpg'));
 });
 
 app.get('/ui/backg1.jpg', function (req, res) {
