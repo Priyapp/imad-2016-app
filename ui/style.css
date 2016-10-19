@@ -2,7 +2,9 @@ body {
     font-family: sans-serif;
     margin-top: 75px;
      background-image: url("backg1.jpg");
-   
+     min-height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .center {
