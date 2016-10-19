@@ -48,7 +48,7 @@ body {
     right: 30px;
     height: 269px;
     width: 89px;
-    background: url(backtotop.jpg);
+    background: url(top-animate.png);
     opacity: 0;
     z-index: 10;
 }
