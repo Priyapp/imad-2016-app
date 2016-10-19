@@ -105,9 +105,14 @@ app.get('/ui/P.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'P.jpg'));
 });
 
-app.get('/ui/backg1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'backg1.jpg'));
+// app.get('/ui/backg1.jpg', function (req, res) {
+//   res.sendFile(path.join(__dirname, 'ui', 'backg1.jpg'));
+// });
+
+app.get('/ui/bg-pattern.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bg-pattern.gif'));
 });
+
 
 app.get('/ui/top-animate.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'top-animate.png'));
