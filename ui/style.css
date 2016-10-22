@@ -42,7 +42,7 @@ body {
 .date{
     color:red;
 }
-#backtothetop {
+#toTop {
     text-indent: -9999px;
     position: fixed;
     top: 200px;
