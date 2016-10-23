@@ -1,4 +1,5 @@
 $(window).scroll(function() {
+    alert("gjgj");
     if ($(this).scrollTop()) {
         $('#toTop').fadeIn();
     } else {
