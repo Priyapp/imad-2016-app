@@ -8,5 +8,6 @@ $(window).scroll(function() {
 });
 
 $("#toTop").click(function() {
+    alert("clik");
     $("html, body").animate({scrollTop: 0}, 1000);
 });
