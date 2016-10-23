@@ -1,18 +1,13 @@
-$(window).scroll(function() {
-  
-    if ($(this).scrollTop()) {
-        $('#toTop').fadeIn();
-    } else {
-        $('#toTop').fadeOut();
-    }
-    $("#toTop").click(function() {
-    alert("cli122");
-    $("html, body").animate({scrollTop: 0}, 1000);
-});
+$(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 200) {
+            $('#totop').fadeIn();
+        } else {
+            $('#totop').fadeOut();
+        }
+    });
 
-});
-
-$("#toTop").click(function() {
-    alert("clik");
-    $("html, body").animate({scrollTop: 0}, 1000);
+    $('#totop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+    });
 });
