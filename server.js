@@ -94,6 +94,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/ui/backtotop.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'backtotop.js'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -117,9 +121,7 @@ app.get('/ui/bg-pattern.gif', function (req, res) {
 app.get('/ui/top-animate.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'top-animate.png'));
 });
-app.get('/ui/backtotop.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'backtotop.js'));
-});
+
 
 // app.get('/big1', function (req, res) {
 //     res.send(createTemplate(big1));
