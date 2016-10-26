@@ -98,6 +98,14 @@ app.get('/ui/backtotop.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'backtotop.js'));
 });
 
+app.get('/ui/one.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'one.css'));
+});
+
+app.get('/ui/two.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'two.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
