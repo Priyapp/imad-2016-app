@@ -121,7 +121,9 @@ app.get('/ui/bg-pattern.gif', function (req, res) {
 app.get('/ui/top-animate.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'top-animate.png'));
 });
-
+app.get('/ui/bootstrap.min.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.css'));
+});
 
 app.get('/ui/home.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'home.html'));
