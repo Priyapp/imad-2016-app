@@ -123,6 +123,10 @@ app.get('/ui/top-animate.png', function (req, res) {
 });
 
 
+app.get('/ui/home.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'home.html'));
+});
+
 // app.get('/big1', function (req, res) {
 //     res.send(createTemplate(big1));
     
