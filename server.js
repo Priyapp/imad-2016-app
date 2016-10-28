@@ -29,6 +29,15 @@ if u want to achieve something, start doing different things right now.
     Content:`<p>
 Do what u love, love what u do...
 </p>`
+    },
+    
+     page1:
+    {
+    title :'Page1',
+    date :'Sep 28, 2016',
+    Content:`<p>
+Do what u love, love what u do...
+</p>`
     }
     
 };
